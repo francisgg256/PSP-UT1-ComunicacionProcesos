@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.procesos.basicos.lanzajar;
 
+
+
 import org.iesalandalus.programacion.utilidades.Entrada;
 
 import java.io.File;
@@ -18,7 +20,7 @@ public class LanzaJarDinamico {
 
         do {
             System.out.print("Introduce el parámetro a pasar al subproceso. Finaliza con un *. ");
-            parametro=Entrada.cadena();
+            parametro= Entrada.cadena();
             if (!parametro.equals("*"))
                 pb.command().add(parametro);
         }while (!parametro.equals("*"));
